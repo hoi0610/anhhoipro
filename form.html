@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .form-content{
+            width: 60%;
+            margin: left;
+            padding: 15px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .content{
+            width: 30%;
+            font-size: 30px;
+            margin: left ;
+        }
+        #id01{
+            font-size: 20px;
+            
+        }
+        .btvn{
+            display: flex;
+        }
+        #taotaikhoan:hover{
+            color: blue;
+        }
+        #dangnhap:hover{
+            color: blue;
+        }
+       
+        #input-checkbox{
+            width: 20px;
+        }
+        .guimaxacthuc{
+            background-color: yellow;
+        }
+       .taotaikhoan{
+           background-color:  yellow;
+           height: 35px;
+           width: 60%;
+           justify-content: space-around;
+       }
+    </style>
+</head>
+<body>
+    <div class='btvn'>
+        <div class='content'>
+            <div>
+                <h4>Tạo Tài Khoản</h4>
+                
+            </div>
+            <p id='id01'>Tạo tài khoản để theo dõi đơn hàng, lưu
+                danh sách sản phẩm yêu thích, nhận
+                nhiều ưu đãi hấp dẫn.</p>
+                <img src="aa.png" alt="anh điện thoại">
+        </div>
+        <form action="">
+            <div class='form-content'>
+                
+                <button id ='dangnhap'>Đăng nhập</button>
+                <button id='taotaikhoan'>Tạo tài khoản    
+                </button>
+            </div>
+            
+                <form action="" class='form' >
+                    <label for="">Họ Tên</label>
+                    <input type="text" placeholder="Nhập Họ Tên" id= 'hoten-id'>
+                    <br>
+                  
+                    <label for="">SĐT</label>
+                    <input type="text" placeholder="Nhập SĐT" id= 'sdt-id'>
+                    <button class='guimaxacthuc'>Gửi mã xác thực</button>
+                  
+                    <br>
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Nhập địa chỉ email" id='email-id'>
+                    <br>
+                    <label for="">Mật khẩu</label>
+                    <input type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự" id = matkhau-id>
+                    <br>
+                    <label for="">giới tính</label>
+                    <input type="radio" name="gioitinh" value='2' id='nam-id'>nam
+                    <input type="radio" name= 'gioitinh' value='1' id='nu-id'>nữ
+                    <br>
+                    <label for="">Ngày sinh 
+                        <select name="" id="select1">
+                            <option value=""> ngày</option> 
+                            <option value=""> 1</option> 
+                            <option value=""> 2</option> 
+                            <option value=""> 3</option>
+                            <option value=""> 4</option>
+                            <option value=""> 5</option> 
+                        </select>
+                        <select name="" id="select2">
+                            <option value=""> tháng</option> 
+                            <option value=""> 1</option> 
+                            <option value=""> 2</option> 
+                            <option value=""> 3</option>
+                            <option value=""> 4</option>
+                            <option value=""> 5</option> 
+                        </select>
+                        <select name="" id="select3">
+                            <option value=""> năm</option> 
+                            <option value=""> 2000</option> 
+                            <option value=""> 2001</option> 
+                            <option value=""> 2002</option>
+                            <option value=""> 2003</option>
+                            <option value=""> 2004</option> 
+                        </select>
+                    </label>
+                    <br>
+                    <input id ='input-checkbox' type ="checkbox">Nhận các thông tin và chương trình khuyến mãi của Tiki qua email.
+                    <br>
+                    <button class="taotaikhoan" onclick="hoipro()">TAO TAI KHOAN</button>
+                    <p>
+                        Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo <a href="https://hotro.tiki.vn/hc/vi/articles/201971214"> điều kiện sử dụng và chính sách của Tiki.</a></p>
+                </form>
+           
+
+        </form>
+    </div>
+    <script>
+        function hoipro(){
+        var x= document.getElementById('hoten-id').value;
+        if (x ==""){
+            alert('ban phai nhap ho ten');
+        }else 
+           alert('dang ki ok');
+        }
+    
+    </script>
+</body>
+</html>
